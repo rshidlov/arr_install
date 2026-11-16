@@ -1,0 +1,26 @@
+{
+  "_readme": [
+    "Edit this file, then re-run setup.sh (or setup.ps1). The wiring is safe to repeat: anything that already exists is skipped.",
+    "public_indexers: indexers that need no account. 'definition' is the indexer's name in Prowlarr (case, spaces and dots do not matter). Set flaresolverr to true for indexers behind Cloudflare.",
+    "private_indexers: PUT YOUR PRIVATE TRACKER LOGINS HERE. Copy the example below into the empty list, change the definition name, and fill in the fields that tracker needs (see 'fields' for examples: username, password, apikey, cookie, passkey). Field names must match what Prowlarr shows for that tracker.",
+    "Only add indexers for content you have the rights to download."
+  ],
+
+  "public_indexers": [
+    { "definition": "internetarchive", "flaresolverr": false },
+    { "definition": "yts",             "flaresolverr": false },
+    { "definition": "eztv",            "flaresolverr": false },
+    { "definition": "nyaasi",          "flaresolverr": false },
+    { "definition": "limetorrents",    "flaresolverr": false }
+  ],
+
+  "private_indexers": [],
+
+  "_private_indexers_example": [
+    {
+      "definition": "your-tracker-definition-name",
+      "flaresolverr": false,
+      "fields": { "username": "your-username", "password": "your-password" }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# Secrets and machine-specific state: never commit these
+.env
+config/
+data/
+
+# Misc
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
